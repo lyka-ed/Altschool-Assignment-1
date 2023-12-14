@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .red-asterisk {
+        color: red;
+      }
+      table {
+        border: none;
+        width: 60px;
+      }
+      td {
+        padding: 10px;
+      }
+    </style>
+    <title>Altschool Signup</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav aria-label="breadcrumbs">
+            <ul>
+              <li><a href="index.html">Return to My Altschool Bio</a></li>
+            </ul>
+          </nav>
+        <h2>Application Form</h2>
+        <p>Fill in your details</p>
+      </section>
+    </header>
+  
+    <form action="/signup" method="post">
+      <table>
+        <tr>
+          <td>
+            <label for="first_name"
+              >First Name<span class="red-asterisk">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="first_name"
+              placeholder="Enter first name"
+              required
+            />
+          </td>
+          <td>
+            <label for="last_name"
+              >Last Name<span class="red-asterisk">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Enter first name"
+              required
+            />
+          </td>
+          <tr>
+            <td>
+                <label>Gender <span class="red-asterisk">*</span></label
+                    ><br />
+                    <select name="gender" id="gender">
+                      <option value="" disabled selected>Select gender</option>
+                    </select>
+            </td>
+            <td>
+                <label for="date_of_birth">Date of Birth<span class="red-asterisk">*</span></label><br />
+                <input type="date"name="date_of_birth"placeholder="dd-mm-yyyy"required/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="email">Email Address<span class="red-asterisk">*</span></label><br />
+                <input type="email" name="email" placeholder="Enter email address" required />
+            </td>
+            <td>
+                <label for="education_level">Education Level<span class="red-asterisk">*</span></label><br>
+                <select name="education_level" id="education_level">
+                    <option value="" disabled selected>Select level of education</option>
+                    <option>Bsc</option>
+                    <option>Msc</option>
+                    <option>Diploma</option>
+                    <option>Doctorate (PhD)</option>
+                    <option>High School / Secondary School</option>
+                    <option>Under Graduate</option>
+                    <option>Junior / Middle School</option>
+                    <option>Post Graduate</option>
+                 </select>
+            </td>
+            <tr>
+                <td>
+                    <label for="country">Country<span class="red-asterisk">*</span></label><br>
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Select country</option>
+                        <option>Nigeria</option>
+                        <option>Kenya</option>
+                        <option>Afghanistan</option>
+                        <option>Aland Islands</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>American Samoa</option>
+                        <option>Angola</option>
+                        <option>Antartica</option>
+                        <option>Agentina</option>
+                        <option>Bahamas</option>
+                        <option>Bangladesh</option>
+                        <option>Barbados</option>
+                        <option>Belgium</option>
+                        <option>Benin</option>
+                        <option>Botswana</option>
+                        <option>Burkina Faso</option>
+                        <option>Cameroon</option>
+                        <option>Canada</option>
+                        <option>Chad</option>
+                        <option>Congo</option>
+                        <option>Dominica</option>
+                        <option>Denmark</option>
+                        <option>Egypt</option>
+                        <option>Ethiopia</option>
+                        <option>France</option>
+                        <option>Fiji</option>
+                        <option>Germany</option>
+                        <option>Ghana</option>
+                        <option>Haiti</option>
+                        <option>Hong Kong</option>
+                        <option>India</option>
+                        <option>Italy</option>
+                        <option>Jamaca</option>
+                        <option>Japan</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="residence_state">State/City of Residence<span class="red-asterisk">*</span></label> <br>
+                    <input type="text" name="residence_state" placeholder="Enter your state of residence" required>
+                </td>
+                <tr>
+                    <td>
+                        <label for="employment_status">Employment Level<span class="red-asterisk">*</span></label><br>
+                        <select name="employment_status" id="employment_status" required>
+                            <option value="" disabled selected>Select employment status</option>
+                            <option>employed</option>
+                            <option>unemployed</option>
+                            <option>self-employed</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="phone_num">Phone Number<span class="red-asterisk">*</span></label><br>
+                        <input type="number" name="phone_num" placeholder="08155765555">
+                    </td>
+                    <tr>
+                        <td>
+                            <label for="choose_school">Choose School<span class="red-asterisk">*</span></label><br />
+                            <select name="choose_school" id="choose_school" required>
+                                <option value="" disabled selected>Select school</option>
+                                <option>School of Engineering</option>
+                                <option>School of Data</option>
+                                <option>School of Product</option>
+                                <option>School of Business</option>
+                                <option>School of Creative Economy</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="choose_course">Choose Course of Study<span class="red-asterisk">*</span></label><br />
+                            <input type="text" name="choose_course" placeholder="Select course" />
+                        </td>
+                        <tr>
+                            <td>
+                                <label for="channel">How did you hear about us?<span class="red-asterisk">*</span></label><br />
+                                <select name="channel" id="channel">
+                                    <option value="" disabled selected>Select channel</option>
+                                    <option>Twitter</option>
+                                    <option>Facebook</option>
+                                    <option>LinkedIn</option>
+                                    <option>Youtube</option>
+                                    <option>Friend</option>
+                                    <option>WhatsApp</option>
+                                    <option>Instagram</option>
+                                    <option>Bill Board</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="discount_code">Scholarship/Discount Code(optional)</label><br />
+                                <input type="text" name="discount_code" placeholder="Scholarship or student ID or discount code"/>
+                            </td>
+                        </tr>
+                    </tr>
+                </tr>
+            </tr>
+          </tr>
+        </tr>
+      </table>
+
+      <p>
+        By clicking continue, I agree to <a href="terms">Terms of Use</a> and
+        acknowledge that I have read the
+        <a href="privacy_policy">Privacy Policy.</a>
+      </p>
+      <button> Proceed </button>
+      <p>Already have an account? <a href="#">Sign in</a></p>
+    </form>
+    
+  </body>
+</html>
